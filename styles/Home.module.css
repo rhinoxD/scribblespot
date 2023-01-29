@@ -1,20 +1,26 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 6rem;
+  padding-top: 2rem;
   min-height: 100vh;
+}
+
+.main h1 {
+  margin: 0 1rem 1rem;
 }
 
 .description {
   display: inherit;
-  justify-content: inherit;
+  justify-content: center;
   align-items: inherit;
   font-size: 0.85rem;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
+  margin: 1rem;
   font-family: var(--font-mono);
 }
 
@@ -149,6 +155,26 @@
     rgba(var(--tile-end-rgb), 1)
   );
   background-clip: content-box;
+}
+
+.mainNav ul {
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+}
+
+.mainNav ul li {
+  margin: 0 1rem;
+  list-style-type: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.blogs {
+}
+
+.blogs .blogItem {
+  margin: 2rem;
 }
 
 /* Enable hover only on non-touch devices */
