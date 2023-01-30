@@ -101,6 +101,20 @@ a {
   text-decoration: none;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6rem;
+  padding-top: 2rem;
+  min-height: 100vh;
+}
+
+.main h1 {
+  margin: 0 1rem 1rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

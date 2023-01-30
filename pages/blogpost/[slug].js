@@ -1,14 +1,21 @@
-import Link from 'next/link'
 import { useRouter } from 'next/router'
+
+import styles from '../../styles/BlogPost.module.css'
 
 const Slug = () => {
   const router = useRouter()
-  const { slug } = router.query
+  console.log(router)
   return (
-    <>
-      <div>{slug}</div>
-      <Link href='/'>Back to home</Link>
-    </>
+    <div className='main'>
+      <h1>{router.query.slug}</h1>
+      <hr className={styles.hr} />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsum
+        maxime dicta tenetur hic soluta, nesciunt eaque consequuntur officia,
+        maiores nemo sit provident earum iusto adipisci temporibus, nobis illo
+        expedita.
+      </p>
+    </div>
   )
 }
 
