@@ -110,19 +110,6 @@
   transform: translateZ(0);
 }
 
-.mainNav ul {
-  display: flex;
-  margin: 2rem;
-  justify-content: center;
-}
-
-.mainNav ul li {
-  margin: 0 1rem;
-  list-style-type: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .blogs {
 }
 
