@@ -2,6 +2,9 @@ import { useRouter } from 'next/router'
 
 import styles from '../../styles/BlogPost.module.css'
 
+// TODO: Find the file corresponding to the slug
+// TODO: Populate them inside the page
+
 const Slug = () => {
   const router = useRouter()
   console.log(router)
