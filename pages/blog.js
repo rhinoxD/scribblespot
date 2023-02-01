@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import * as fs from 'fs'
 
 import styles from '../styles/Blog.module.css'
 
@@ -21,12 +22,26 @@ const Blog = ({ blogs }) => {
   )
 }
 
-export async function getServerSideProps(context) {
-  const res = await fetch('http://localhost:3000/api/blogs')
-  const blogs = await res.json()
+export async function getStaticProps(context) {
+  let data = await fs.promises.readdir('blogdata')
+  let blogs = []
+  let blog
+  for (let i = 0; i < data.length; i++) {
+    const item = data[i]
+    blog = await fs.promises.readFile(`blogdata/${item}`, 'utf-8')
+    blogs.push(JSON.parse(blog))
+  }
   return {
     props: { blogs }, // will be passed to the page component as props
   }
 }
+
+// export async function getServerSideProps(context) {
+//   const res = await fetch('http://localhost:3000/api/blogs')
+//   const blogs = await res.json()
+//   return {
+//     props: { blogs }, // will be passed to the page component as props
+//   }
+// }
 
 export default Blog

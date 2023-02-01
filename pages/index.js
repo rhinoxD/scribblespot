@@ -32,6 +32,13 @@ export default function Home() {
             // }}
             alt='hero-img'
           />
+          {/* <img
+            className={styles.myImg}
+            src='/hero-img3.png'
+            width={500}
+            height={300}
+            alt='hero-img'
+          /> */}
         </div>
         <div className={styles.description}>
           <p>Where developers come to stay ahead of the curve.</p>
