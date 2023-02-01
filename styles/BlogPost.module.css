@@ -3,3 +3,8 @@
   opacity: 0.2;
   margin-bottom: 1.2rem;
 }
+
+.p {
+  line-height: 2rem;
+  color: rgb(59, 148, 231);
+}
