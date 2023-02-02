@@ -1,0 +1,59 @@
+.form {
+  min-width: 50vw;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  margin-bottom: 1rem;
+}
+
+.field input {
+  font-size: 1rem;
+  line-height: 48px;
+  padding: 0 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 2px var(--secondary);
+}
+
+.field textarea {
+  font-size: 1rem;
+  line-height: 48px;
+  padding: 0 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 2px var(--secondary);
+}
+
+.field input::placeholder {
+  font-family: inherit;
+  opacity: 0.5;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  margin-top: 1.25rem;
+  cursor: pointer;
+  background: var(--secondary);
+  line-height: 48px;
+  font-family: inherit;
+  font-size: inherit;
+}
+.btnPrimary {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+.textarea {
+  max-width: 50vw;
+  max-height: 20vh;
+}
