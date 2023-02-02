@@ -1,5 +1,6 @@
 {
   "title": "Introduction to ReactJS: A Guide for Beginners",
+  "metadesc": "ReactJS is an open-source JavaScript library created by Facebook's Jordan Walke to make user interfaces for both web and mobile systems. React was first used in 2011 on Facebook's newsfeed. In 2012, it was used on Instagram, and in 2013 it was made available to the public. React is best for applications that change their data quickly and dynamically. It can show the parts of the UI that are changing without re-rendering the whole page. This makes the user experience much faster. If you are still wondering what ReactJS is all about, let's go through the introduction to ReactJS and its related aspects.",
   "content": "ReactJS is an open-source JavaScript library created by Facebook's Jordan Walke to make user interfaces for both web and mobile systems. React was first used in 2011 on Facebook's newsfeed. In 2012, it was used on Instagram, and in 2013 it was made available to the public. React is best for applications that change their data quickly and dynamically. It can show the parts of the UI that are changing without re-rendering the whole page. This makes the user experience much faster. If you are still wondering what ReactJS is all about, let's go through the introduction to ReactJS and its related aspects.",
   "author": "JUAN",
   "slug": "intro-to-react"

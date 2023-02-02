@@ -12,7 +12,7 @@ const Blog = ({ blogs }) => {
             <Link href={`/blogpost/${blog.slug}`} key={blog.slug}>
               <div className={styles.card}>
                 <h2>{blog.title}</h2>
-                <p>{blog.content.substring(0, 150)}...</p>
+                <p>{blog.metadesc.substring(0, 150)}...</p>
               </div>
             </Link>
           )
