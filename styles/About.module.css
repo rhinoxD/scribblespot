@@ -1,0 +1,13 @@
+.h2 {
+  margin: 1rem 0 2rem;
+}
+
+.p {
+  position: relative;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+}
