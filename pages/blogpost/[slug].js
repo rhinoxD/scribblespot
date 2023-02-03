@@ -23,6 +23,9 @@ export async function getStaticPaths() {
       { params: { slug: 'intro-to-next' } },
       { params: { slug: 'intro-to-node' } },
       { params: { slug: 'intro-to-react' } },
+      { params: { slug: 'intro-to-java' } },
+      { params: { slug: 'intro-to-django' } },
+      { params: { slug: 'intro-to-python' } },
     ],
     fallback: false, // can also be true or 'blocking'
   }
