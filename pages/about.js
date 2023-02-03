@@ -28,6 +28,16 @@ const About = () => {
         quaerat quae ducimus cum officiis cumque maiores ad facilis eligendi,
         minus ratione non, odit neque! Atque.
       </p>
+      <p className={styles.p2}>We offer the following services</p>
+      <ul className={styles.list}>
+        <li>Service 1</li>
+        <li>Service 2</li>
+        <li>Service 3</li>
+        <li>Service 4</li>
+        <li>Service 5</li>
+        <li>Service 6</li>
+        <li>Service 7</li>
+      </ul>
 
       <h2 className={styles.h2}>Contact Us</h2>
       <p className={styles.p}>

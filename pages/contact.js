@@ -20,19 +20,21 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     const data = { name, email, comment }
-
-    const res = await fetch('http://localhost:3000/api/postcontact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    })
-    // const resData = await res.json()
-    // console.log(resData)
-    setName('')
-    setEmail('')
-    setComment('')
+    if (name === '' || email === '' || comment === '') return
+    else {
+      const res = await fetch('http://localhost:3000/api/postcontact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+      // const resData = await res.json()
+      // console.log(resData)
+      setName('')
+      setEmail('')
+      setComment('')
+    }
   }
 
   return (
@@ -49,6 +51,7 @@ const Contact = () => {
             name='name'
             value={name}
             onChange={handleChange}
+            required
           />
         </div>
         <div className={`${styles.field}`}>
@@ -63,7 +66,11 @@ const Contact = () => {
             name='email'
             value={email}
             onChange={handleChange}
+            required
           />
+          <div className={styles.p}>
+            We'll never share your email with anyone else.
+          </div>
         </div>
         <div className={`${styles.field}`}>
           <label htmlFor='comment'>Comments</label>
@@ -74,6 +81,7 @@ const Contact = () => {
             name='comment'
             value={comment}
             onChange={handleChange}
+            required
           ></textarea>
         </div>
         <button type='submit' className={`${styles.btn} ${styles.btnPrimary}`}>

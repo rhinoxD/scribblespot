@@ -48,14 +48,17 @@ export default function Home() {
           <div className={styles.blogItem}>
             <h3>Blog 1</h3>
             <p>Description..</p>
+            <button className={styles.btn}>Read More</button>
           </div>
           <div className={styles.blogItem}>
             <h3>Blog 2</h3>
             <p>Description..</p>
+            <button className={styles.btn}>Read More</button>
           </div>
           <div className={styles.blogItem}>
             <h3>Blog 3</h3>
             <p>Description..</p>
+            <button className={styles.btn}>Read More</button>
           </div>
         </div>
       </main>

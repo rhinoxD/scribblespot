@@ -109,6 +109,14 @@
   margin: 1rem;
 }
 
+.btn {
+  background-color: #000;
+  color: #fff;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
