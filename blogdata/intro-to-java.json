@@ -1,0 +1,7 @@
+{
+  "title": "An Introduction to Java",
+  "metadesc": "Java is a general-purpose, class-based, object-oriented programming language. Java enticed programmers with its attractive syntax, object-oriented capabilities, memory management, and, most importantly, portability. It means “Write-once run-anywhere”. Nonetheless, it provides support for primitive data types int, char, double, and float. Hence, it is not considered as a pure object-oriented programming language, at this moment we don't touch it in detail, we will cover this in upcoming blogs.",
+  "content": "Java is a general-purpose, class-based, object-oriented programming language. Java enticed programmers with its attractive syntax, object-oriented capabilities, memory management, and, most importantly, portability. It means “Write-once run-anywhere”. Nonetheless, it provides support for primitive data types int, char, double, and float. Hence, it is not considered as a pure object-oriented programming language, at this moment we don't touch it in detail, we will cover this in upcoming blogs.",
+  "author": "It Hurts When IP",
+  "slug": "intro-to-java"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "An Introduction to Django",
+  "metadesc": "First things first, What is Django? It's a Python web framework. Okay then what's a web framework? A web framework is a set of tools designed to help you build interactive websites. Over these 6 articles, you and I will build our first web app, Learning Log. It's a web app that provides its users with an online journal in which they can log in, make entries on whatever topics they want, and access any other benefits. It may not sound cool now but remember this is just an introduction to Django. There's more coming in later articles.",
+  "content": "First things first, What is Django? It's a Python web framework. Okay then what's a web framework? A web framework is a set of tools designed to help you build interactive websites. Over these 6 articles, you and I will build our first web app, Learning Log. It's a web app that provides its users with an online journal in which they can log in, make entries on whatever topics they want, and access any other benefits. It may not sound cool now but remember this is just an introduction to Django. There's more coming in later articles.",
+  "author": "Drop It Like It's Hotspot2",
+  "slug": "intro-to-django"
+}
