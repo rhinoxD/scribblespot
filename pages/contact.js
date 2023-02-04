@@ -53,6 +53,7 @@ const Contact = () => {
             required
           />
         </div>
+
         <div className={`${styles.field}`}>
           <label htmlFor='email' className='form-label'>
             Email address
@@ -71,6 +72,7 @@ const Contact = () => {
             We'll never share your email with anyone else.
           </div>
         </div>
+
         <div className={`${styles.field}`}>
           <label htmlFor='comment'>Comments</label>
           <textarea
@@ -83,6 +85,7 @@ const Contact = () => {
             required
           ></textarea>
         </div>
+
         <button type='submit' className={`${styles.btn} ${styles.btnPrimary}`}>
           Submit
         </button>

@@ -37,7 +37,9 @@ export async function getStaticProps(context) {
     `blogdata/${context.params.slug}.json`,
     'utf-8'
   )
+
   const blog = JSON.parse(res)
+  
   return {
     props: { blog }, // will be passed to the page component as props
   }

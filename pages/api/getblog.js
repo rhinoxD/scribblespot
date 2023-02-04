@@ -6,6 +6,7 @@ export default function handler(req, res) {
     if (err) {
       res.status(400).json({ error: `${req.query.slug} not found` })
     }
+
     res.status(200).json(JSON.parse(data))
   })
 }
