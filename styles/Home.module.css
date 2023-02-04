@@ -99,6 +99,15 @@
 .blogs .blogItem {
   margin: 2rem;
 }
+.blogs h2 {
+  margin: 2rem;
+  text-align: center;
+}
+
+.blogItem h3,
+.blogItem p {
+  margin: 0.5rem 0;
+}
 
 .imageWrapper {
   padding: 0.8rem;
@@ -215,10 +224,17 @@
     margin: 2rem;
     text-align: center;
   }
-  
-  .blogItem h3, 
-  .blogItem p{
+
+  .blogItem h3,
+  .blogItem p {
     margin: 0.5rem 0;
+  }
+  .blogItem p {
+    display: block;
+    width: 80vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   .myImg {

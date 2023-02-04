@@ -1,3 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6rem;
+  padding-top: 2rem;
+  min-height: 100vh;
+}
+
+.main h1 {
+  margin: 0 1rem 1rem;
+}
+
 .hr {
   width: 100%;
   opacity: 0.2;
@@ -7,4 +21,10 @@
 .p {
   line-height: 2rem;
   color: rgb(59, 148, 231);
+}
+
+@media (max-width: 700px) {
+  .main {
+    padding: 2rem 0.8rem;
+  }
 }

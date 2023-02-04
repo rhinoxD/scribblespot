@@ -4,7 +4,7 @@ import styles from '../../styles/BlogPost.module.css'
 
 const Slug = ({ blog }) => {
   return (
-    <div className='main'>
+    <div className={styles.main}>
       <h1>{blog && blog.title}</h1>
       <hr className={styles.hr} />
       <p className={styles.p}>{blog && blog.content}</p>
@@ -39,7 +39,7 @@ export async function getStaticProps(context) {
   )
 
   const blog = JSON.parse(res)
-  
+
   return {
     props: { blog }, // will be passed to the page component as props
   }
