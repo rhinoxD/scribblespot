@@ -18,8 +18,6 @@ export default async function handler(req, res) {
     fs.writeFile('contactdata/results.json', newData, (err) => {
       // error checking
       if (err) throw err
-
-      console.log('New data added')
     })
 
     res.status(200).json(req.body)

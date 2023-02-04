@@ -167,18 +167,15 @@
 
   .description {
     font-size: 0.8rem;
+    min-width: 100vw;
+    margin-top: 0;
   }
 
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
+  .description p {
     display: flex;
     justify-content: center;
-    position: fixed;
     width: 100%;
+    padding: 1rem;
   }
 
   .description p {
@@ -209,6 +206,25 @@
       rgb(var(--background-end-rgb)) 40%
     );
     z-index: 1;
+  }
+
+  .blogs {
+    width: 100vw;
+  }
+  .blogs h2 {
+    margin: 2rem;
+    text-align: center;
+  }
+  
+  .blogItem h3, 
+  .blogItem p{
+    margin: 0.5rem 0;
+  }
+
+  .myImg {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
   }
 }
 

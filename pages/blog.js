@@ -51,7 +51,7 @@ export async function getStaticProps(context) {
   let allCount = data.length
   let blogs = []
   let blog
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 5; i++) {
     const item = data[i]
 
     blog = await fs.promises.readFile(`blogdata/${item}`, 'utf-8')

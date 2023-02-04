@@ -30,7 +30,6 @@ const Contact = () => {
         body: JSON.stringify(data),
       })
       // const resData = await res.json()
-      // console.log(resData)
       setName('')
       setEmail('')
       setComment('')
@@ -38,7 +37,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='main'>
+    <div className={styles.main}>
       <form className={styles.form} onSubmit={handleSubmit} method='post'>
         <div className={`${styles.field}`}>
           <label htmlFor='name' className='form-label'>
