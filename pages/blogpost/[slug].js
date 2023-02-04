@@ -17,16 +17,13 @@ const Slug = ({ blog }) => {
 // Generates `/blogpost/intro-to-js`, `/blogpost/intro-to-next`,
 // `/blogpost/intro-to-node`, `/blogpost/intro-to-react`
 export async function getStaticPaths() {
+  const res = await fs.promises.readdir(`blogdata`)
+  const data = res.map((blog) => {
+    return { params: { slug: blog.split('.')[0] } }
+  })
+  
   return {
-    paths: [
-      { params: { slug: 'intro-to-js' } },
-      { params: { slug: 'intro-to-next' } },
-      { params: { slug: 'intro-to-node' } },
-      { params: { slug: 'intro-to-react' } },
-      { params: { slug: 'intro-to-java' } },
-      { params: { slug: 'intro-to-django' } },
-      { params: { slug: 'intro-to-python' } },
-    ],
+    paths: data,
     fallback: false, // can also be true or 'blocking'
   }
 }
