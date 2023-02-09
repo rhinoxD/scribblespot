@@ -46,6 +46,8 @@ export async function getServerSideProps(context) {
   let url
   if (process.env.NODE_ENV === 'development') {
     url = process.env.LOCAL_URL
+  } else {
+    url = process.env.URL
   }
 
   const res = await fetch(`${url}/api/getblog?slug=${context.query.slug}`)
