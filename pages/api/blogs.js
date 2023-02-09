@@ -24,13 +24,11 @@ export default async function handler(req, res) {
   switch (req.method) {
     case 'POST':
       let bodyObject = req.body
-      console.log(bodyObject)
       let myPost = await db.collection('blogs').insertOne(bodyObject)
       res.json(myPost.ops[0])
       break
     case 'GET':
       const blogs = await db.collection('blogs').find({}).toArray()
-      console.log(req.query.count);
       res.json({ status: 200, data: blogs })
       break
   }

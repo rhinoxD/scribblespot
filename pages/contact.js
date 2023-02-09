@@ -2,10 +2,11 @@ import { useState } from 'react'
 
 import styles from '@/styles/Contact.module.css'
 
-const Contact = () => {
+const Contact = ({ url }) => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [comment, setComment] = useState('')
+  console.log(url)
 
   const handleChange = (e) => {
     if (e.target.name === 'name') {
@@ -22,7 +23,7 @@ const Contact = () => {
     const data = { name, email, comment }
     if (name === '' || email === '' || comment === '') return
     else {
-      const res = await fetch('http://localhost:3000/api/postcontact', {
+      const res = await fetch(`${url}/api/postcontact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -92,6 +93,19 @@ const Contact = () => {
       </form>
     </div>
   )
+}
+
+export async function getServerSideProps(context) {
+  let url
+  if (process.env.NODE_ENV === 'development') {
+    url = process.env.LOCAL_URL
+  } else {
+    url = process.env.URL
+  }
+
+  return {
+    props: { url },
+  }
 }
 
 export default Contact

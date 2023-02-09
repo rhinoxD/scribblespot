@@ -10,7 +10,7 @@ const Blog = (props) => {
   const [count, setCount] = useState(2)
 
   const fetchData = async () => {
-    let res = await fetch(`http://localhost:3000/api/blogs?count=${count + 2}`)
+    let res = await fetch(`${props.url}/api/blogs?count=${count + 2}`)
     setCount(count + 2)
 
     let data = await res.json()
@@ -72,17 +72,25 @@ const Blog = (props) => {
 // }
 
 export async function getServerSideProps(context) {
-  let res = await fetch('http://localhost:3000/api/blogs', {
+  let url
+  if (process.env.NODE_ENV === 'development') {
+    url = process.env.LOCAL_URL
+  } else {
+    url = process.env.URL
+  }
+
+  let res = await fetch(`${url}/api/blogs`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
   })
 
+
   let blogs = await res.json()
 
   return {
-    props: { blogs: blogs.data },
+    props: { blogs: blogs.data, url },
   }
 }
 
